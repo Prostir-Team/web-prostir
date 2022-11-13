@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+:root {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main_heading {
+    font-weight: 800;
+    font-size: xx-large;
+}
