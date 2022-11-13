@@ -10,6 +10,11 @@
     <title>Prostir - {% block title %}{% endblock %}</title>
 </head>
 <body>
+   <div class="nav-bar">
+        {% block navbar %}
+        {% endblock %}
+   </div>
+   
     <div class="main">
         {% block main %}
         {% endblock %}
