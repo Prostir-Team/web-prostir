@@ -7,9 +7,14 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/fonts.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
-    <title>Prostir - {% block title %}{% endblock %}</title>
+    <title>Prostir Team - {% block title %}{% endblock %}</title>
+    
 </head>
 <body>
+    <nav>
+        {% block navbar %}
+        {% endblock %}
+    </nav>
     <div class="main">
         {% block main %}
         {% endblock %}
