@@ -1,15 +1,11 @@
 @font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/OpenSans-Bold.ttf"),
-        url("../fonts/OpenSans-BoldItalic.ttf"),
-        url("../fonts/OpenSans-ExtraBold.ttf"),
-        url("../fonts/OpenSans-ExtraBoldItalic.ttf"),
-        url("../fonts/OpenSans-Italic.ttf"),
-        url("../fonts/OpenSans-Light.ttf"),
-        url("../fonts/OpenSans-LightItalic.ttf"),
-        url("../fonts/OpenSans-Medium.ttf"),
-        url("../fonts/OpenSans-MediumItalic.ttf"),
-        url("../fonts/OpenSans-Regular.ttf"),
-        url("../fonts/OpenSans-SemiBold.ttf"),
-        url("../fonts/OpenSans-SemiBoldItalic.ttf");
+    font-family: Montserrat;
+    font-style: normal;
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: italic;
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
 }
