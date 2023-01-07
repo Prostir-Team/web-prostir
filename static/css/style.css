@@ -2,39 +2,67 @@
     font-family: Montserrat, sans-serif;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-}
-
+/* Navbar styles */
 nav {
-    border: 1px solid;
+    /* border: 1px solid;
     border-top: 0;
     border-radius: 0 0 5px 5px;
-    border-color: rgb(150, 150, 150);
-    padding: 0.5rem;
+    border-color: rgb(150, 150, 150); */
+    /* padding: 1rem 0.5rem; */
+    display: flex;
+    flex-direction: column;
 
-    background-color: rgba(128, 128, 128, 0.8);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+
+    /* Should always be visible */
     position: absolute;
     top: 0;
     right: 15%;
     left: 15%;
 }
 
+.nav_title {
+    display: flex;
+    padding: 0.5rem;
+    background-color: rgba(50, 50, 50);
+    color: white;
+    justify-content: space-around;
+}
+
+.nav_links {
+    display: flex;
+    padding: 0.5rem;
+    background-color: rgba(120, 120, 120, 0.8);
+    justify-content: space-around;
+}
+
+.nav_links a {
+    transition: ease 0.25s;
+    color: black;
+}
+
+.nav_links a:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+/* Main website styles */
 .main {
-    padding: 3rem 20% 0;
+    padding: 5rem 20% 0;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
 }
 
 .main_heading {
     font-weight: bolder;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
 }
 
 .secondary_heading {
-    font-size: large;
+    font-weight: 500;
+    font-size: 1.2rem;
     text-align: center;
 }

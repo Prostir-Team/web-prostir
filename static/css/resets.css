@@ -1,0 +1,26 @@
+/* Resets default html styling */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    cursor: auto;
+}
+
+a:link:active {
+    color: black;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+    cursor: auto;
+}
+
+a:visited:active {
+    color: black;
+}
