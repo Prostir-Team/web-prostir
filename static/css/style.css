@@ -1,5 +1,5 @@
 :root {
-    font-family: Montserrat, sans-serif;
+    font-family: "MacPaw Fixel", sans-serif;
 }
 
 /* Navbar styles */
@@ -26,15 +26,28 @@ nav {
     display: flex;
     padding: 0.5rem;
     background-color: rgba(50, 50, 50);
-    color: white;
     justify-content: space-around;
+}
+
+.nav_title a {
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    color: white;
+    transition: ease-out 0.25s;
+}
+
+.nav_title a:hover {
+    color: linear-gradient(0deg, rgba(255,246,0,1) 50%, rgba(0,93,255,1) 50%);
+    cursor: pointer;
 }
 
 .nav_links {
     display: flex;
-    padding: 0.5rem;
-    background-color: rgba(120, 120, 120, 0.8);
     justify-content: space-around;
+    padding: 0.5rem;
+
+    background-color: rgba(120, 120, 120, 0.8);
+    border-radius: 0 0 10px 10px;
 }
 
 .nav_links a {
@@ -49,8 +62,7 @@ nav {
 
 /* Main website styles */
 .main {
-    padding: 5rem 20% 0;
-    font-weight: 500;
+    padding: 5.5rem 20% 0;
     display: flex;
     flex-direction: column;
 }
@@ -62,7 +74,40 @@ nav {
 }
 
 .secondary_heading {
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-size: large;
     text-align: center;
+}
+
+.article {
+    padding: 1rem 20%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    padding: 0.5rem;
+
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+    font-size: small;
+
+    border-radius: 5px 5px 0 0;
+}
+
+@media screen and (max-width: 1280px) {
+    nav {
+        right: 0;
+        left: 0;
+    }
+
+    .main {
+        padding: 5rem 1rem 0;
+    }
+
+    .main_heading {
+        font-size: 3.5rem;
+    }
 }

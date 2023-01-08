@@ -1,11 +1,16 @@
 @font-face {
+    font-family: "MacPaw Fixel";
+    src: url("../fonts/MacPawFixel-VF.ttf") format("truetype");
+}
+
+@font-face {
     font-family: Montserrat;
     font-style: normal;
-    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
     font-family: Montserrat;
     font-style: italic;
-    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
 }
