@@ -1,26 +1,25 @@
 /* Resets default html styling */
 
 body {
-    padding: 0;
     margin: 0;
 }
 
 a:link {
-    color: black;
+    color: inherit;
     text-decoration: none;
     cursor: auto;
 }
 
 a:link:active {
-    color: black;
+    color: inherit;
 }
 
 a:visited {
-    color: black;
+    color: inherit;
     text-decoration: none;
     cursor: auto;
 }
 
 a:visited:active {
-    color: black;
+    color: inherit;
 }

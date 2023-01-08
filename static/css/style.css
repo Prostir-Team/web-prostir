@@ -1,58 +1,51 @@
 :root {
     font-family: "MacPaw Fixel", sans-serif;
+    background-color: rgb(40, 40, 40);
+    color: rgb(210, 210, 210);
 }
 
 /* Navbar styles */
 nav {
-    /* border: 1px solid;
-    border-top: 0;
-    border-radius: 0 0 5px 5px;
-    border-color: rgb(150, 150, 150); */
-    /* padding: 1rem 0.5rem; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
 
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-
-    /* Should always be visible */
     position: absolute;
     top: 0;
-    right: 15%;
-    left: 15%;
+    right: 0;
+    left: 0;
+    padding: 0.5rem;
+    padding-top: 0.75rem;
+    
+    background-color: rgba(60, 60, 60, 0.9);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 .nav_title {
     display: flex;
-    padding: 0.5rem;
-    background-color: rgba(50, 50, 50);
-    justify-content: space-around;
-}
-
-.nav_title a {
-    /* font-weight: bold; */
+    justify-content: start;
+    margin-left: 15%;
+    flex-grow: 3;
     font-size: 1.2rem;
-    color: white;
-    transition: ease-out 0.25s;
+    font-weight: normal;
+    transition: ease 0.25s;
 }
 
-.nav_title a:hover {
-    color: linear-gradient(0deg, rgba(255,246,0,1) 50%, rgba(0,93,255,1) 50%);
+.nav_title:hover {
+    color: white;
     cursor: pointer;
 }
 
 .nav_links {
     display: flex;
-    justify-content: space-around;
-    padding: 0.5rem;
-
-    background-color: rgba(120, 120, 120, 0.8);
-    border-radius: 0 0 10px 10px;
+    flex-grow: 1;
+    justify-content: inherit;
+    margin-right: 15%;
 }
 
 .nav_links a {
     transition: ease 0.25s;
-    color: black;
 }
 
 .nav_links a:hover {
@@ -62,18 +55,18 @@ nav {
 
 /* Main website styles */
 .main {
-    padding: 5.5rem 20% 0;
+    padding: 3.5rem 20% 0;
     display: flex;
     flex-direction: column;
 }
 
-.main_heading {
+.main_title {
     font-weight: bolder;
     font-size: 5rem;
     text-align: center;
 }
 
-.secondary_heading {
+.secondary_title {
     font-size: large;
     text-align: center;
 }
@@ -85,29 +78,22 @@ nav {
 footer {
     position: absolute;
     bottom: 0;
-    left: 15%;
-    right: 15%;
+    left: 0;
+    right: 0;
     padding: 0.5rem;
 
     background-color: rgb(50, 50, 50);
-    color: white;
     text-align: center;
     font-size: small;
-
-    border-radius: 5px 5px 0 0;
 }
 
+/* Styles for mobile devices */
 @media screen and (max-width: 1280px) {
-    nav {
-        right: 0;
-        left: 0;
-    }
-
     .main {
         padding: 5rem 1rem 0;
     }
 
-    .main_heading {
+    .main_title {
         font-size: 3.5rem;
     }
 }
