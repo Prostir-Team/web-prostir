@@ -55,9 +55,13 @@ nav {
 
 /* Main website styles */
 .main {
-    padding: 3.5rem 20% 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+}
+
+.title {
+    padding: 3.5rem 20% 1rem;
 }
 
 .main_title {
@@ -66,17 +70,31 @@ nav {
     text-align: center;
 }
 
-.secondary_title {
-    font-size: large;
-    text-align: center;
+.devs_showcase {
+    max-width: 100vw;
+    height: 40rem;
+
+    background-image: url("/static/img/prostir_img1.png");
+    background-color: rgb(175, 175, 175);
+    background-blend-mode: multiply;
+    background-position: center;
 }
 
-.article {
-    padding: 1rem 20%;
+.devs_showcase .desc {
+    width: 20rem;
+    padding: 0.8rem;
+    margin: 5rem 20%;
+    /* max-width: 10rem; */
+
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(40, 40, 40, 0.45);
+    background-blend-mode: inherit;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
+    top: auto;
     bottom: 0;
     left: 0;
     right: 0;

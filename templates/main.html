@@ -3,11 +3,27 @@
 {% block title %}Main{% endblock %}
 
 {% block main %}
-<section>
+<section class="title">
     <div class="main_title">Prostir Team</div>
-    <div class="secondary_title">An enthusiastic team of passionate developers.</div>
-    <div class="article">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos quis saepe velit, ipsum minus, nisi dolor ullam nam sequi distinctio vero deserunt? Natus, laudantium. Facilis nobis voluptatibus porro hic?
+</section>
+
+<section class="devs_showcase">
+    <div class="desc">
+        We are passionate developers from Ukraine,
+        who like to modify Garry's Mod inside out.
     </div>
+    <script>
+        const screenshots = [
+            "/static/img/prostir_img1.png",
+            "/static/img/prostir_img2.png"
+        ]
+
+        function randomScreenshot() {
+            const screenshot = screenshots[Math.round(Math.random() * screenshots.length)]
+            document.getElementsByClassName("devs_showcase")[0].style.background_image = `url(${screenshot})`
+        } 
+
+        setInterval(randomScreenshot, 5)
+    </script>
 </section>
 {% endblock %}
