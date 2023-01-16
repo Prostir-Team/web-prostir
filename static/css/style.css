@@ -10,7 +10,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -81,23 +81,23 @@ nav {
 }
 
 .devs_showcase .desc {
-    width: 20rem;
+    width: 30rem;
     padding: 0.8rem;
     margin: 5rem 20%;
     /* max-width: 10rem; */
 
-    -webkit-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(40, 40, 40, 0.45);
     background-blend-mode: inherit;
 }
 
 footer {
-    position: fixed;
+    /* position: fixed;
     top: auto;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     padding: 0.5rem;
 
     background-color: rgb(50, 50, 50);
