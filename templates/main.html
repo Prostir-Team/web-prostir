@@ -12,28 +12,48 @@
         We are passionate developers from Ukraine,
         who like to modify Garry's Mod inside out.
     </div>
-    <script>
-        const screenshots = [
-            "/static/img/prostir_img1.png",
-            "/static/img/prostir_img2.png"
-        ]
-
-        function randomScreenshot() {
-            const screenshot = screenshots[Math.round(Math.random() * screenshots.length)]
-            document.getElementsByClassName("devs_showcase")[0].style.background_image = `url(${screenshot})`
-        } 
-
-        setInterval(randomScreenshot, 5)
-    </script>
 </section>
 <section class="team_showcase">
-    <div class="team_showcase_title">Our team</div>
-    <div class="members">
-        <div class="member">
-            <img src="/static/img/team_pfp/n1clude.png" alt="n1clude's profile picture">
-            <div class="member_name">n1clude</div>
-            <div class="member_desc">smart introvert 🤓</div>
+    <div class="team_showcase_container">
+        <div class="team_showcase_title">Our team</div>
+        <div class="members">
+            <div class="member">
+                <img src="/static/img/team_pfp/swan.png" alt="swanchick's profile picture">
+                <div class="member_name">Swanchick</div>
+                <div class="member_desc">Full-stack developer, team founder</div>
+            </div>
+
+            <div class="member">
+                <img src="/static/img/team_pfp/n1clude.png" alt="n1clude's profile picture">
+                <div class="member_name">n1clude</div>
+                <div class="member_desc">Frontend developer, half-mapper.</div>
+            </div>
+
+            <div class="member">
+                <img src="/static/img/team_pfp/isemenuk27.png" alt="isemenuk27's profile picture">
+                <div class="member_name">Isemenuk27</div>
+                <div class="member_desc">Lua coder, mapper.</div>
+            </div>
+
+            <div class="member">
+                <img src="/static/img/team_pfp/soberly.png" alt="soberly's profile picture">
+                <div class="member_name">soberly</div>
+                <div class="member_desc">Mapper.</div>
+            </div>
         </div>
     </div>
 </section>
+<script>
+    const screenshots = [
+        "/static/img/prostir_img1.png",
+        "/static/img/prostir_img2.png"
+    ]
+
+    function randomScreenshot() {
+        const screenshot = screenshots[Math.round(Math.random() * screenshots.length)]
+        document.getElementsByClassName("devs_showcase")[0].style.background_image = `url(${screenshot})`
+    } 
+
+    setInterval(randomScreenshot, 5)
+</script>
 {% endblock %}
