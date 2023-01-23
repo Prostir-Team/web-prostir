@@ -22,7 +22,7 @@ nav {
     backdrop-filter: blur(4px);
 }
 
-.nav_title {
+.nav-title {
     display: flex;
     justify-content: start;
     margin-left: 15%;
@@ -32,23 +32,23 @@ nav {
     transition: ease 0.25s;
 }
 
-.nav_title:hover {
+.nav-title:hover {
     color: white;
     cursor: pointer;
 }
 
-.nav_links {
+.nav-links {
     display: flex;
     flex-grow: 1;
     justify-content: inherit;
     margin-right: 15%;
 }
 
-.nav_links a {
+.nav-links a {
     transition: ease 0.25s;
 }
 
-.nav_links a:hover {
+.nav-links a:hover {
     cursor: pointer;
     color: rgb(255, 255, 255);
 }
@@ -64,13 +64,13 @@ nav {
     padding: 3.5rem 20% 1rem;
 }
 
-.main_title {
+.main-title {
     font-weight: bolder;
     font-size: 5rem;
     text-align: center;
 }
 
-.devs_showcase {
+.devs-showcase {
     max-width: 100%;
     height: 40rem;
 
@@ -80,7 +80,7 @@ nav {
     background-position: center;
 }
 
-.devs_showcase .desc {
+.devs-showcase .desc {
     width: 20rem;
     padding: 0.8rem;
     margin: 8rem 20%;
@@ -94,7 +94,7 @@ nav {
     background-blend-mode: inherit;
 }
 
-.team_showcase {
+.team-showcase {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,17 +107,17 @@ nav {
     background-position: center;
 }
 
-.team_showcase_container {
+.team-showcase-container {
     padding: 1rem;
     margin: 3rem;
 
-    background-color: rgba(60, 60, 60, 0.9);
+    background-color: rgba(60, 60, 60, 0.75);
     border-radius: 15px;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
-.team_showcase_title {
+.team-showcase-title {
     text-align: center;
     font-size: xx-large;
     font-weight: 600;
@@ -154,7 +154,7 @@ nav {
     margin-right: auto;
 }
 
-.member .member_name {
+.member .member-name {
     flex-grow: 1;
     font-size: larger;
     font-weight: 500;
@@ -162,11 +162,88 @@ nav {
     margin: 0.5rem;
 }
 
-.member .member_desc {
+.member .member-desc {
     flex-grow: 1;
     font-size: large;
     font-weight: 300;
     text-align: center;
+}
+
+.player-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    height: 60rem;
+
+    background-image: url("/static/img/prostir_img3.png");
+}
+
+.player-list-desc {
+    font-size: larger;
+    text-align: center;
+    margin: 0.5rem auto;
+    padding: 0.5rem 0.8rem 0.3rem 0.8rem;
+    background-color: rgba(50, 50, 50, 0.7);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.players {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.player-list-player {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgba(50, 50, 50, 0.7);
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.player-pfp {
+    max-width: 128px;
+    min-width: 128px;
+    max-height: 128px;
+    min-height: 128px;
+
+    border-radius: 100%;
+
+    padding: 0 0.5rem;
+    margin: 0.5rem auto;
+}
+.player-name {
+    margin: 0 0.5rem 0.5rem;
+    text-align: center;
+    font-size: small;
+}
+
+.join-now-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 5rem;
+    margin: 1rem auto;
+
+    background-color: rgba(50, 50, 50, 0.7);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: ease-out 0.3s;
+}
+
+.join-now-button:hover {
+    padding: 1rem 5.5rem;
+    
+    cursor: pointer;
+    background-color: rgb(60,60,60);
+    font-weight: 600;
 }
 
 footer {
@@ -188,7 +265,7 @@ footer {
         padding: 5rem 1rem 0;
     }
 
-    .main_title {
+    .main-title {
         font-size: 3.5rem;
     }
 }

@@ -4,56 +4,53 @@
 
 {% block main %}
 <section class="title">
-    <div class="main_title">Prostir Team</div>
+    <div class="main-title">Prostir Team</div>
 </section>
 
-<section class="devs_showcase">
+<section class="devs-showcase">
     <div class="desc">
         We are passionate developers from Ukraine,
         who like to modify Garry's Mod inside out.
     </div>
 </section>
-<section class="team_showcase">
-    <div class="team_showcase_container">
-        <div class="team_showcase_title">Our team</div>
+<section class="team-showcase">
+    <div class="team-showcase-container">
+        <div class="team-showcase-title">Our team</div>
         <div class="members">
             <div class="member">
                 <img src="/static/img/team_pfp/swan.png" alt="swanchick's profile picture">
-                <div class="member_name">Swanchick</div>
-                <div class="member_desc">Full-stack developer, team founder</div>
+                <div class="member-name">Swanchick</div>
+                <div class="member-desc">Full-stack developer, team founder</div>
             </div>
 
             <div class="member">
                 <img src="/static/img/team_pfp/n1clude.png" alt="n1clude's profile picture">
-                <div class="member_name">n1clude</div>
-                <div class="member_desc">Frontend developer, half-mapper.</div>
+                <div class="member-name">n1clude</div>
+                <div class="member-desc">Frontend developer, half-mapper.</div>
             </div>
 
             <div class="member">
                 <img src="/static/img/team_pfp/isemenuk27.png" alt="isemenuk27's profile picture">
-                <div class="member_name">Isemenuk27</div>
-                <div class="member_desc">Lua coder, mapper.</div>
+                <div class="member-name">Isemenuk27</div>
+                <div class="member-desc">Lua coder, mapper.</div>
             </div>
 
             <div class="member">
                 <img src="/static/img/team_pfp/soberly.png" alt="soberly's profile picture">
-                <div class="member_name">soberly</div>
-                <div class="member_desc">Mapper.</div>
+                <div class="member-name">soberly</div>
+                <div class="member-desc">Mapper.</div>
             </div>
         </div>
     </div>
 </section>
-<script>
-    const screenshots = [
-        "/static/img/prostir_img1.png",
-        "/static/img/prostir_img2.png"
-    ]
-
-    function randomScreenshot() {
-        const screenshot = screenshots[Math.round(Math.random() * screenshots.length)]
-        document.getElementsByClassName("devs_showcase")[0].style.background_image = `url(${screenshot})`
-    } 
-
-    setInterval(randomScreenshot, 5)
-</script>
+<section class="player-list">
+    <div class="player-list-desc">These players are playing on Prostir Sandbox right now!</div>
+    <div class="players">
+        <div class="player-list-player">
+            <img class="player-pfp" src="/static/img/team_pfp/n1clude.png" alt="">
+            <div class="player-name">Placeholder n1clude</div>
+        </div>
+    </div>
+    <a class="join-now-button" href="steam://connect/91.203.5.123:25016">Join now</a>
+</section>
 {% endblock %}
