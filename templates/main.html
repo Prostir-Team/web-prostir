@@ -46,10 +46,9 @@
 <section class="player-list">
     <div class="player-list-desc">These players are playing on Prostir Sandbox right now!</div>
     <div class="players">
-        <div class="player-list-player">
-            <img class="player-pfp" src="/static/img/team_pfp/n1clude.png" alt="">
-            <div class="player-name">Placeholder n1clude</div>
-        </div>
+        {% for playerName in players %}
+            <p class="player-list-player">{{ playerName }}</p>
+        {% endfor %}
     </div>
     <a class="join-now-button" href="steam://connect/91.203.5.123:25016">Join now</a>
 </section>
