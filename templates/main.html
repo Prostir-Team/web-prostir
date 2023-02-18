@@ -4,52 +4,52 @@
 
 {% block main %}
 <section class="title">
-    <div class="main-title">Prostir Team</div>
+	<div class="main-title">Prostir Team</div>
 </section>
 
 <section class="devs-showcase">
-    <div class="desc">
-        We are passionate developers from Ukraine,
-        who like to modify Garry's Mod inside out.
-    </div>
+	<div class="desc">
+		We are passionate developers from Ukraine,
+		who like to modify Garry's Mod inside out.
+	</div>
 </section>
 <section class="team-showcase">
-    <div class="team-showcase-container">
-        <div class="team-showcase-title">Our team</div>
-        <div class="members">
-            <div class="member">
-                <img src="/static/img/team_pfp/swan.png" alt="swanchick's profile picture">
-                <div class="member-name">Swanchick</div>
-                <div class="member-desc">Full-stack developer, team founder</div>
-            </div>
+	<div class="team-showcase-container">
+		<div class="team-showcase-title">Our team</div>
+		<div class="members">
+			<div class="member">
+				<img src="/static/img/team_pfp/swan.png" alt="swanchick's profile picture">
+				<div class="member-name">Swanchick</div>
+				<div class="member-desc">Full-stack developer, team founder</div>
+			</div>
 
-            <div class="member">
-                <img src="/static/img/team_pfp/n1clude.png" alt="n1clude's profile picture">
-                <div class="member-name">n1clude</div>
-                <div class="member-desc">Frontend developer, half-mapper.</div>
-            </div>
+			<div class="member">
+				<img src="/static/img/team_pfp/n1clude.png" alt="n1clude's profile picture">
+				<div class="member-name">n1clude</div>
+				<div class="member-desc">Frontend developer, half-mapper.</div>
+			</div>
 
-            <div class="member">
-                <img src="/static/img/team_pfp/isemenuk27.png" alt="isemenuk27's profile picture">
-                <div class="member-name">Isemenuk27</div>
-                <div class="member-desc">Lua coder, mapper.</div>
-            </div>
+			<div class="member">
+				<img src="/static/img/team_pfp/isemenuk27.png" alt="isemenuk27's profile picture">
+				<div class="member-name">Isemenuk27</div>
+				<div class="member-desc">Lua coder, mapper.</div>
+			</div>
 
-            <div class="member">
-                <img src="/static/img/team_pfp/soberly.png" alt="soberly's profile picture">
-                <div class="member-name">soberly</div>
-                <div class="member-desc">Mapper.</div>
-            </div>
-        </div>
-    </div>
+			<div class="member">
+				<img src="/static/img/team_pfp/soberly.png" alt="soberly's profile picture">
+				<div class="member-name">soberly</div>
+				<div class="member-desc">Mapper.</div>
+			</div>
+		</div>
+	</div>
 </section>
 <section class="player-list">
-    <div class="player-list-desc">These players are playing on Prostir Sandbox right now!</div>
-    <div class="players">
-        {% for playerName in players %}
-            <p class="player-list-player">{{ playerName }}</p>
-        {% endfor %}
-    </div>
-    <a class="join-now-button" href="steam://connect/91.203.5.123:25016">Join now</a>
+	<div class="player-list-desc">These players are playing on Prostir Sandbox right now!</div>
+	<div class="players">
+		{% for playerName in players %}
+			<p class="player-list-player">{{ playerName }}</p>
+		{% endfor %}
+	</div>
+	<a class="join-now-button" href="steam://connect/91.203.5.123:25016">Join now</a>
 </section>
 {% endblock %}

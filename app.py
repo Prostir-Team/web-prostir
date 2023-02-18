@@ -11,9 +11,15 @@ def main():
 	players = []
 
 	for player in playersInfo["players"]:
+		if player["name"] == "": continue
+		
 		players.append(player["name"])
 
 	return render_template("main.html", players=players)
+
+@app.route("/gmod/loading")
+def loading():
+	return render_template("loading.html")
 
 if __name__ == "__main__":
 	app.run(port=50000, debug=True)
