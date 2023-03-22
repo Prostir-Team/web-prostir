@@ -251,6 +251,60 @@ nav {
     font-weight: 600;
 }
 
+/* Projects.html styles */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1rem;
+    margin: 3rem auto;
+    max-width: 70%;
+
+    background-color: rgba(60, 60, 60, 0.75);
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.projects-list-desc {
+    padding: 0 0 0.5rem;
+    margin: auto;
+}
+
+.project {
+    padding: 1rem;
+    margin: auto;
+
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(70, 70, 70, 0.75);
+    border-radius: 15px;
+}
+
+#project-icon {
+    margin: auto;
+}
+
+#project-icon img {
+    max-height: 256px;
+    max-width: 256px;
+    border-radius: 100%;
+}
+
+#project-title {
+    font-weight: bold;
+    font-size: larger;
+    margin: auto;
+}
+
+#project-desc {
+    max-width: 90%;
+    margin: auto;
+}
+
 footer {
     /* position: fixed;
     top: auto;
