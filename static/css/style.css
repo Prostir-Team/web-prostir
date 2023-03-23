@@ -319,7 +319,7 @@ footer {
 }
 
 /* Styles for mobile devices */
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
     .main {
         padding: 5rem 1rem 0;
     }
@@ -327,4 +327,4 @@ footer {
     .main-title {
         font-size: 3.5rem;
     }
-}
+} */
