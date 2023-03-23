@@ -25,5 +25,9 @@ def loading():
 def projects():
 	return render_template("projects.html")
 
+@app.route("/news")
+def news():
+	return render_template("news.html")
+
 if __name__ == "__main__":
 	app.run(port=50000, debug=True)

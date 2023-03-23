@@ -284,26 +284,72 @@ nav {
     border-radius: 15px;
 }
 
-#project-icon {
+.project-icon {
     margin: auto;
 }
 
-#project-icon img {
+.project-icon img {
     max-height: 256px;
     max-width: 256px;
     border-radius: 100%;
 }
 
-#project-title {
+.project-title {
     font-weight: bold;
     font-size: larger;
     margin: auto;
 }
 
-#project-desc {
+.project-desc {
     max-width: 90%;
     margin: auto;
 }
+
+/* News.html styles */
+
+.news-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    max-width: 45rem;
+    margin: 1rem;
+    background-color: rgba(60,60,60, 0.75);
+    border-radius: 15px;
+}
+
+.news-post {
+    background-color: rgba(70, 70, 70, 0.75);
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+#post-title {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 0 0.5rem;
+}
+
+#post-author {
+    font-weight: bold;
+}
+
+#post-date {
+    font-weight: bold;
+}
+
+#post-body {
+    background-color: rgba(80, 80, 80, 0.75);
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+/* base.html */
 
 footer {
     /* position: fixed;
