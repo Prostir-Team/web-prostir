@@ -317,16 +317,23 @@ nav {
 .news-feed {
     display: flex;
     flex-direction: column;
+    min-width: 45rem;
     max-width: 45rem;
     margin: 1rem;
     background-color: rgba(60,60,60, 0.75);
     border-radius: 15px;
 }
 
+.post-end {
+    margin: 0.5rem;
+    font-style: italic;
+}
+
 .news-post {
     background-color: rgba(70, 70, 70, 0.75);
     margin: 0.5rem;
     padding: 0.5rem;
+    border-radius: inherit;
 }
 
 #post-title {
@@ -347,6 +354,7 @@ nav {
     background-color: rgba(80, 80, 80, 0.75);
     margin: 0.5rem;
     padding: 0.5rem;
+    border-radius: 5px;
 }
 
 /* base.html */
