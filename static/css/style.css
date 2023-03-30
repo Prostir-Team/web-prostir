@@ -68,6 +68,7 @@ nav {
     font-weight: bolder;
     font-size: 5rem;
     text-align: center;
+    
 }
 
 .devs-showcase {
@@ -252,24 +253,32 @@ nav {
 }
 
 /* Projects.html styles */
+
+.projects-title {
+    background-color: rgb(60,60,60, 0.7);
+}
+
 .projects-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    max-width: 100%;
+    
+    position: absolute;
+    bottom: 5rem;
+    top: 0;
+    height: 100%;
+    width: 100%;
 
-    padding: 1rem;
-    margin: 3rem auto;
-    max-width: 70%;
-
-    background-color: rgba(60, 60, 60, 0.75);
-    border-radius: 15px;
+    background-image: url("/static/img/prostir_img5.png");
+    background-size: cover;
+    /*border-radius: 15px;
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
 }
 
 .projects-list-desc {
-    padding: 0 0 0.5rem;
-    margin: auto;
+    text-align: center;
 }
 
 .project {
@@ -360,14 +369,15 @@ nav {
 /* base.html */
 
 footer {
-    /* position: fixed;
+    position: fixed;
     top: auto;
     bottom: 0;
-    left: 0;
-    right: 0; */
+    width: 100%;
     padding: 0.5rem;
 
-    background-color: rgb(50, 50, 50);
+    background-color: rgba(50, 50, 50, 0.9);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     text-align: center;
     font-size: small;
 }
