@@ -1,24 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/resets.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/loading.css') }}"/>
-	<title>Loading...</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen for Prostir Sandbox</title>
+    <!-- import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- import styles -->
+    <link rel="stylesheet" href="/static/css/loading.css" await>
 </head>
 <body>
-	<div class="loading-background">
-		<div class="loading-menu">
-			<h1>Вітаємо на Простір Sandbox!</h1>
-			<p>
-				Якийсь текст, який буде на сервері, але так :D.
-				Тут я щось пишу, і воно буде там кароче,
-				ну ви зроз - це взагалі довга історія
-			</p>
-		</div>
-	</div>
+    <div id="content">
+        <img id="screenbg" src="" alt="background">
+        <div class="background-styling stats">
+            <span id="curmap">Поточна мапа: 🤔</span>
+        </div>
+        <div class="background-styling rules">
+            <b>Рандомне правило</b><br>
+            <span id="random_rule">якесь рандомне правило</span>
+        </div>
+        <div class="background-styling bottom">
+            <div class="title">Ви входите на Простір Sandbox...</div>
+        </div>
+    </div>
+    <script>
+        var screenshots = [
+            "https://cdn.discordapp.com/attachments/1091369276625145856/1091369819586166864/image.png",
+			"https://media.discordapp.net/attachments/1089632832353222707/1089633140861051041/image.png",
+			"https://media.discordapp.net/attachments/1089101963175673899/1089101963829981195/image.png",
+			"https://cdn.discordapp.com/attachments/1088132849456119838/1088132849833619578/image.png",
+			"https://media.discordapp.net/attachments/1088120506584154222/1088121034911272970/20230220193556_1.jpg",
+			"https://cdn.discordapp.com/attachments/1086979684534861854/1086979684987850934/image.png",
+			"https://cdn.discordapp.com/attachments/1086415901496201366/1086416300563243018/image.png",
+			"https://media.discordapp.net/attachments/1091375496241107036/1091375498803818576/gm_excess_construct_130041.jpg",
+			"https://media.discordapp.net/attachments/1091375496241107036/1091375497071579136/gm_lacour_islands_fog0086.jpg",
+			"https://cdn.discordapp.com/attachments/1088553142767059014/1088560165688725604/image.png",
+			"https://media.discordapp.net/attachments/1091375496241107036/1091375895614337064/gm_eimer_nook0046.jpg",
+			"https://media.discordapp.net/attachments/1091375496241107036/1091376040313630761/gm_mobenix_v3_final0002.jpg",
+            "https://cdn.discordapp.com/attachments/1091375496241107036/1091376188708098219/gm_mobenix_v3_final0023.jpg",
+            "https://media.discordapp.net/attachments/1091375496241107036/1091375894632874096/gm_vyten0000.jpg"
+        ];
+
+        var rules = [
+            "1. У спірних ситуаціях, або у ситуаціях, котрі не чітко, не у повній мірі, або взагалі не присутні у цих правилах - рішення виносить модератор.",
+            "1.1 Якщо ви не згідні із рішенням модератора - оскаржуйте його напряму Головному модератору",
+            "2. Використовування будь якого ПЗ, котре тим чи іншим чином дає нечесну перевагу в грі заборонено.",
+            "2.2 Якщо у вас наявні сумнівні скрипти/макроси - звертайтесь до модерації/адміністрації за кларифікацією легальності ПЗ.",
+            "3. Пропаганда рашизму та антиукраїнських ідей заборонено.",
+            "4. Перешкоджання задуманому геймплею гравців на сервері заборонено. Більш детально правило описане в нашому Discord.",
+            "5. Перешкоджання коректній роботі сервера заборонене.",
+            "6. Заборонено використовувати конструкції/механізми, котрі надають не чесну перевагу в PvP. Більш детально правило описане в нашому Discord.",
+            "7. Порушення правил спілкування заборонено.",
+            "7.1 Заборонений расизм/сексизм.",
+            "7.2 Заборонена надмірна токсичність у бік інших гравців/модерації/адміністрації.",
+            "7.3 Заборонено пропагування нацизму/рашизму/комунізму.",
+            "7.4 Заборонений виходити зі серверу для уникання наказання."
+        ];
+
+        setInterval(setBackground, 30000);
+        function setBackground() {
+            var selected_screenshot = screenshots[Math.floor(Math.random() * screenshots.length)];
+            document.getElementById("screenbg").src = selected_screenshot;
+        }
+
+        setInterval(writeRandomRule, 15000);
+        function writeRandomRule() {
+            var selected_rule = rules[Math.floor(Math.random() * rules.length)];
+            document.getElementById("random_rule").innerHTML = selected_rule;
+        }
+        
+        function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language ) {
+            document.getElementById("curmap").innerHTML = "Поточна мапа: " + mapname;
+        }
+        
+        setBackground();
+        writeRandomRule();
+    </script>
 </body>
 </html>
