@@ -1,22 +1,21 @@
 {% extends "base.html" %}
 
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/projects.css') }}"/>
+{% endblock %}
+
 {% block title %}Projects{% endblock %}
+{% block pagename %}- Projects{% endblock %}
 
 {% block main %}
 <section class="projects-list">
-    <section class="title projects-title">
-        <div class="main-title">Our Projects</div>
-        <div class="projects-list-desc">
-            Our projects that we're ready to publicly showcase.
-        </div>
-    </section>
     <div class="projects-container">
-        <div class="project">
+        <div class="project bg-blur-10px">
             <div class="project-icon"><img src="/static/img/project_logos/prsbox.png" alt="Project Icon"></div>
             <div class="project-title">Prostir Sandbox</div>
             <div class="project-desc">
                 Our amazing sandbox server for Garry's Mod, where you can spend good time with
-                our *amazing* community. Our addon collection weighs less than 3GB
+                our friendly (haha lol) community. Our addon collection weighs around 3GB
                 but delivers amazing experience in PVP. For builders we have diverse
                 set of props and tools to make your experience as pleasant as possible.
             </div>

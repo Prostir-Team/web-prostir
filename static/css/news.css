@@ -1,0 +1,60 @@
+.news-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    max-width: 100%;
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    background-image: url("/static/img/prostir_img6.png");
+    background-size: cover;
+}
+
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    min-width: 45rem;
+    max-width: 45rem;
+    margin: 4rem 1rem 0;
+    /* background-color: rgba(60,60,60, 0.75); */
+    border-radius: 8px;
+}
+
+.post-end {
+    margin: 0.5rem;
+    font-style: italic;
+    background-color: rgba(70, 70, 70, 0.75);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.news-post {
+    background-color: rgba(70, 70, 70, 0.75);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: inherit;
+}
+
+#post-title {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 0 0.5rem;
+}
+
+#post-author {
+    font-weight: bold;
+}
+
+#post-date {
+    font-weight: bold;
+}
+
+#post-body {
+    background-color: rgba(70, 70, 70, 0.05);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

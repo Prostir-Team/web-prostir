@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/news.css') }}"/>
+{% endblock %}
+
 {% block title %}News{% endblock %}
+{% block pagename %}- News{% endblock %}
 
 {% block main %}
 <section class="title">
@@ -8,18 +13,18 @@
 </section>
 <div class="news-container">
     <div class="news-feed">
-        <div class="news-post">
+        <div class="news-post bg-blur-10px">
             <span id="post-title">Placeholder Post</span>
             by <span id="post-author">n1clude</span>
             on <span id="post-date">23.03.2023 16:08</span>
-            <div id="post-body">
+            <div id="post-body" class="bg-blur-5px">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Consequuntur pariatur, optio ab voluptatibus architecto assumenda,
                 fugit quam laborum eius iusto tempora molestiae saepe dicta,
                 non culpa amet vero! Asperiores, sit!
             </div>
         </div>
-        <div class="post-end">You reached the end of news.</div>
+        <div class="post-end bg-blur-10px">You reached the end of news feed.</div>
     </div>
 </div>
 

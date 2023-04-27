@@ -4,53 +4,15 @@
     color: rgb(210, 210, 210);
 }
 
-/* Navbar styles */
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 0.5rem;
-    padding-top: 0.75rem;
-    z-index: 10000;
-    background-color: rgba(60, 60, 60, 0.9);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+.bg-blur-5px {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
-.nav-title {
-    display: flex;
-    justify-content: start;
-    margin-left: 15%;
-    flex-grow: 3;
-    font-size: 1.2rem;
-    font-weight: normal;
-    transition: ease 0.25s;
-}
-
-.nav-title:hover {
-    color: white;
-    cursor: pointer;
-}
-
-.nav-links {
-    display: flex;
-    flex-grow: 1;
-    justify-content: inherit;
-    margin-right: 15%;
-}
-
-.nav-links a {
-    transition: ease 0.25s;
-}
-
-.nav-links a:hover {
-    cursor: pointer;
-    color: rgb(255, 255, 255);
+.bg-blur-10px {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 /* Main website styles */
@@ -68,7 +30,6 @@ nav {
     font-weight: bolder;
     font-size: 5rem;
     text-align: center;
-    
 }
 
 .devs-showcase {
@@ -115,8 +76,6 @@ nav {
 
     background-color: rgba(60, 60, 60, 0.75);
     border-radius: 15px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
 
 .team-showcase-title {
@@ -188,8 +147,6 @@ nav {
     padding: 0.5rem 0.8rem 0.3rem 0.8rem;
     background-color: rgba(50, 50, 50, 0.7);
     border-radius: 10px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
 
 .players {
@@ -205,8 +162,6 @@ nav {
     padding: 5px 10px 5px 10px;
     background-color: rgba(50, 50, 50, 0.7);
     border-radius: 15px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
 
 .player-pfp {
@@ -239,8 +194,6 @@ nav {
 
     background-color: rgba(50, 50, 50, 0.7);
     border-radius: 10px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
     transition: ease-out 0.3s;
 }
 
@@ -250,120 +203,6 @@ nav {
     cursor: pointer;
     background-color: rgb(60,60,60);
     font-weight: 600;
-}
-
-/* Projects.html styles */
-
-.projects-title {
-    background-color: rgb(60,60,60, 0.7);
-}
-
-.projects-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    
-    position: absolute;
-    bottom: 5rem;
-    top: 0;
-    height: 100%;
-    width: 100%;
-
-    background-image: url("/static/img/prostir_img5.png");
-    background-size: cover;
-    /*border-radius: 15px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px); */
-}
-
-.projects-list-desc {
-    text-align: center;
-}
-
-.project {
-    padding: 1rem;
-    margin: auto;
-
-    max-width: 30rem;
-    display: flex;
-    flex-direction: column;
-
-    background-color: rgba(70, 70, 70, 0.75);
-    border-radius: 15px;
-}
-
-.project-icon {
-    margin: auto;
-}
-
-.project-icon img {
-    max-height: 256px;
-    max-width: 256px;
-    border-radius: 100%;
-}
-
-.project-title {
-    font-weight: bold;
-    font-size: larger;
-    margin: auto;
-}
-
-.project-desc {
-    max-width: 90%;
-    margin: auto;
-}
-
-/* News.html styles */
-
-.news-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-}
-
-.news-feed {
-    display: flex;
-    flex-direction: column;
-    min-width: 45rem;
-    max-width: 45rem;
-    margin: 1rem;
-    background-color: rgba(60,60,60, 0.75);
-    border-radius: 15px;
-}
-
-.post-end {
-    margin: 0.5rem;
-    font-style: italic;
-}
-
-.news-post {
-    background-color: rgba(70, 70, 70, 0.75);
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border-radius: inherit;
-}
-
-#post-title {
-    font-size: xx-large;
-    font-weight: bolder;
-    margin: 0 0.5rem;
-}
-
-#post-author {
-    font-weight: bold;
-}
-
-#post-date {
-    font-weight: bold;
-}
-
-#post-body {
-    background-color: rgba(80, 80, 80, 0.75);
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border-radius: 5px;
 }
 
 /* base.html */

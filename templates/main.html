@@ -14,7 +14,7 @@
 	</div>
 </section>
 <section class="team-showcase">
-	<div class="team-showcase-container">
+	<div class="team-showcase-container bg-blur">
 		<div class="team-showcase-title">Our team</div>
 		<div class="members">
 			<div class="member">
@@ -38,12 +38,12 @@
 	</div>
 </section>
 <section class="player-list">
-	<div class="player-list-desc">These players are playing on Prostir Sandbox right now!</div>
+	<div class="player-list-desc bg-blur-10px">These players are playing on Prostir Sandbox right now!</div>
 	<div class="players">
 		{% for playerName in players %}
-			<p class="player-list-player">{{ playerName }}</p>
+			<p class="player-list-player bg-blur-10px">{{ playerName }}</p>
 		{% endfor %}
 	</div>
-	<a class="join-now-button" href="steam://connect/91.203.5.123:25016">Join now</a>
+	<a class="join-now-button bg-blur-10px" href="steam://connect/91.203.5.123:25016">Join now</a>
 </section>
 {% endblock %}

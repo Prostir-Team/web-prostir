@@ -1,0 +1,59 @@
+.projects-title {
+    background-color: rgb(60,60,60, 0.7);
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    
+    position: absolute;
+    bottom: 5rem;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    background-image: url("/static/img/prostir_img5.png");
+    background-size: cover;
+    /*border-radius: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
+}
+
+.projects-list-desc {
+    text-align: center;
+}
+
+.project {
+    padding: 1rem;
+    margin: auto;
+
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(70, 70, 70, 0.75);
+    border-radius: 15px;
+}
+
+.project-icon {
+    margin: auto;
+}
+
+.project-icon img {
+    max-height: 256px;
+    max-width: 256px;
+    border-radius: 100%;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: larger;
+    margin: auto;
+}
+
+.project-desc {
+    max-width: 90%;
+    margin: auto;
+}
