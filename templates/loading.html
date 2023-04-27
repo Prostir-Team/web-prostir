@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading Screen for Prostir Sandbox</title>
     <!-- import fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css') }}">
     <!-- import styles -->
     <link rel="stylesheet" href="/static/css/loading.css" await>
 </head>
@@ -16,14 +14,11 @@
     <div id="content">
         <img id="screenbg" src="" alt="background">
         <div class="background-styling stats">
-            <span id="curmap">Поточна мапа: 🤔</span>
+            <span class="greet">Ласкаво просимо на <b>Простір Sandbox</b>.</span> <span id="curmap">Поточна мапа: 🤔</span>
         </div>
         <div class="background-styling rules">
             <b>Рандомне правило</b><br>
             <span id="random_rule">якесь рандомне правило</span>
-        </div>
-        <div class="background-styling bottom">
-            <div class="title">Ви приєднуєтесь до Простір Sandbox...</div>
         </div>
     </div>
     <script>

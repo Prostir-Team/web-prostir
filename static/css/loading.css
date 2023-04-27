@@ -47,9 +47,6 @@ body {
     border-radius: 8px;
 }
 
-.bottom {
-    position: fixed;
-    bottom: 0;
-    padding: 1em;
-    border-radius: 0 8px 0 0;
+.greet {
+    color: rgb(235, 235, 235);
 }
