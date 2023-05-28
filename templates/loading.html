@@ -36,7 +36,8 @@
 			"https://media.discordapp.net/attachments/1091375496241107036/1091375895614337064/gm_eimer_nook0046.jpg",
 			"https://media.discordapp.net/attachments/1091375496241107036/1091376040313630761/gm_mobenix_v3_final0002.jpg",
             "https://cdn.discordapp.com/attachments/1091375496241107036/1091376188708098219/gm_mobenix_v3_final0023.jpg",
-            "https://media.discordapp.net/attachments/1091375496241107036/1091375894632874096/gm_vyten0000.jpg"
+            "https://media.discordapp.net/attachments/1091375496241107036/1091375894632874096/gm_vyten0000.jpg",
+            "https://cdn.discordapp.com/attachments/1112353191875575818/1112353192022396979/20230528150457_1.jpg"
         ];
 
         var rules = [
@@ -55,13 +56,11 @@
             "7.4 Заборонений виходити зі серверу для уникання наказання."
         ];
 
-        setInterval(setBackground, 30000);
         function setBackground() {
             var selected_screenshot = screenshots[Math.floor(Math.random() * screenshots.length)];
             document.getElementById("screenbg").src = selected_screenshot;
         }
-
-        setInterval(writeRandomRule, 15000);
+        
         function writeRandomRule() {
             var selected_rule = rules[Math.floor(Math.random() * rules.length)];
             document.getElementById("random_rule").innerHTML = selected_rule;
@@ -72,7 +71,9 @@
         }
         
         setBackground();
+        setInterval(setBackground, 30000);
         writeRandomRule();
+        setInterval(writeRandomRule, 15000);
     </script>
 </body>
 </html>
