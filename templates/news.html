@@ -13,17 +13,13 @@
 </section>
 <div class="news-container">
     <div class="news-feed">
-        <div class="news-post bg-blur-10px">
-            <span id="post-title">Placeholder Post</span>
-            by <span id="post-author">n1clude</span>
-            on <span id="post-date">23.03.2023 16:08</span>
-            <div id="post-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Consequuntur pariatur, optio ab voluptatibus architecto assumenda,
-                fugit quam laborum eius iusto tempora molestiae saepe dicta,
-                non culpa amet vero! Asperiores, sit!
-            </div>
-        </div>
+        {% for article in news %} <!-- article = (uuid, title, img_path, date) -->
+        <a class="news-post bg-blur-10px" href="/news/{{ article[0] }}">
+            <span id="post-title">{{ article[1] }}</span>
+            on <span id="post-date">{{ article[3] }}</span>
+        </a>
+        {% endfor %}
+
         <div class="post-end bg-blur-10px">You reached the end of news feed.</div>
     </div>
 </div>

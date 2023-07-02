@@ -36,6 +36,8 @@
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: inherit;
+
+    margin-bottom: 1rem;
 }
 
 #post-title {

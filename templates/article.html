@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/news.css') }}"/>
+{% endblock %}
+
+{% block title %} TITLE {% endblock %}
+{% block pagename %}- TITLE{% endblock %}
+
+{% block main %}
+<section class="title">
+	<div class="main-title">News</div>
+</section>
+<div class="news-container">
+    <div class="news-feed">
+        <ul>
+            <h1>Bug fix</h1>
+            <li>Your mom was deleted</li>
+        </ul>
+
+    </div>
+</div>
+{% endblock %}
