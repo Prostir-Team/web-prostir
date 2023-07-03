@@ -1,0 +1,55 @@
+/* article.html */
+
+.article-title {
+    font-size: xx-large;
+    text-shadow: 0px 0px 24px rgb(50,50,50);
+}
+
+.article-section {
+    background-color: rgba(70, 70, 70, 0.75);
+    margin: 0.5rem 0;
+    padding: 0;
+    border-radius: inherit;
+
+}
+
+.article-info-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    padding: 1rem 0.2rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    transition: padding 0.5s, background-color 0.2s, color 0.2s;
+}
+
+.article-info-text-container:hover {
+    padding: 2rem 0.4rem;
+    color: white;
+    background-color: rgb(170, 170, 170, 0.75);
+}
+
+.article-type {
+    transition: color 0.2s;
+    padding: 0.5rem 0.5rem 0.2rem;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.article-type:hover {
+    color: white;
+}
+
+.type0 {
+    background-color: rgb(172, 69, 63);
+}
+
+.type1 {
+    background-color: rgb(89, 184, 68);
+}
+
+.type2 {
+    background-color: rgb(158, 153, 60);
+}

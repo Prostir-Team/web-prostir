@@ -221,6 +221,11 @@ footer {
     font-size: small;
 }
 
+.h-white { /* Highlight White */
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+}
+
 /* Styles for mobile devices */
 /* @media screen and (max-width: 1280px) {
     .main {

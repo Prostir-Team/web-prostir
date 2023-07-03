@@ -2,10 +2,11 @@
 
 {% block styles %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/news.css') }}"/>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/article.css') }}"/>
 {% endblock %}
 
 {% block title %} {{ article_info[1] }} {% endblock %}
-{% block pagename %}- {{ article_info[1] }}{% endblock %}
+{% block pagename %}- News / {{ article_info[1] }}{% endblock %}
 
 {% block main %}
 <section class="title">
@@ -13,17 +14,19 @@
 </section>
 <div class="news-container">
     <div class="news-feed">
-        <h1 id="post-title">{{ article_info[1] }} on {{ article_info[3] }}</h1>
+        <div class="article-title"><span class="h-white">{{ article_info[1] }}</span> on {{ article_info[3] }}</div>
         
         {% for info_type in info.keys() %}
-        <div class="news-post bg-blur-10px">
-            <h2 class="type{{ info_type }}">{{ update_type(info_type).name }}</h2>
+        <div class="article-section bg-blur-10px">
+            <h2 class="article-type type{{ info_type }}">{{ update_type(info_type).name }}</h2>
             <!-- info_type - це чисто енам -->
             <!-- type{{info_type}} виставляє колір та стиль для для того елементу -->
             <!-- тому я там додав у файлах стилю type1, type2 й type3 -->
 
             {% for info_text in info[info_type] %}
-            <p>* {{ info_text }}</p>
+            <div class="article-info-text-container">
+                <span class="article-info-text-content">- {{ info_text }}</span>
+            </div>
             <!-- info_text - це текст який просто пояснює, що робить було зроблено -->
             {% endfor %}
         </div>
