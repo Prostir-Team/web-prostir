@@ -4,12 +4,12 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/news.css') }}"/>
 {% endblock %}
 
-{% block title %}News{% endblock %}
-{% block pagename %}- News{% endblock %}
+{% block title %}Новини{% endblock %}
+{% block pagename %}- Новини{% endblock %}
 
 {% block main %}
 <section class="title">
-	<div class="main-title">News</div>
+	<div class="main-title">Новини</div>
 </section>
 <div class="news-container">
     <div class="news-feed">
@@ -19,11 +19,11 @@
             <!-- В середину артікл вкладено тапл(фактично список), і там там є інформація про новину -->
             <!-- Вище ти можеш почачити, що за що відповідає і просто їх отримувати за допомогою article[1](Будеш отримувати title) -->
             <span class="post-title">{{ article[1] }}</span>
-            on <span class="post-date">{{ article[3] }}</span>
+            о <span class="post-date">{{ article[3] }}</span>
         </a>
         {% endfor %}
 
-        <div class="post-end bg-blur-10px">You reached the end of news feed.</div>
+        <div class="post-end bg-blur-10px">Ви дійшли до кінця стрічки новин.</div>
     </div>
 </div>
 {% endblock %}

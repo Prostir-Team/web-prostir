@@ -6,15 +6,15 @@
 {% endblock %}
 
 {% block title %} {{ article_info[1] }} {% endblock %}
-{% block pagename %}- News / {{ article_info[1] }}{% endblock %}
+{% block pagename %}- Новини / {{ article_info[1] }}{% endblock %}
 
 {% block main %}
 <section class="title">
-	<div class="main-title">News</div>
+	<div class="main-title">Новини</div>
 </section>
 <div class="news-container">
     <div class="news-feed">
-        <div class="article-title"><span class="h-white">{{ article_info[1] }}</span> on {{ article_info[3] }}</div>
+        <div class="article-title"><span class="h-white">{{ article_info[1] }}</span> о {{ article_info[3] }}</div>
         
         {% for info_type in info.keys() %}
         <div class="article-section bg-blur-10px">
