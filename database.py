@@ -1,24 +1,56 @@
 from utils import *
 from sqlite3 import connect as sqlite_connect
-from sqlite3 import Connection, Cursor
 
+
+conn = sqlite_connect("server.sqlite", check_same_thread=False)
+sql = conn.cursor()
 
 class News:
-    def __init__(self):
-        self.db = sqlite_connect("server.sqlite", check_same_thread=False)
-        self.sql = self.db.cursor()
-
-        self.sql.execute("CREATE TABLE IF NOT EXISTS main_news(uuid INT, title TEXT, img TEXT, date TEXT)")
-        self.db.commit()
-
-    def get_news(self):
-        self.sql.execute("SELECT * FROM main_news")
+    @staticmethod
+    def start():
+        sql.execute("CREATE TABLE IF NOT EXISTS main_news(uuid TEXT, title TEXT, img TEXT, date TEXT)")
+        conn.commit()
         
-        return self.sql.fetchall()
+    @staticmethod
+    def get_news():
+        sql.execute("SELECT * FROM main_news")
+        
+        return sql.fetchall()
     
-    def add_new(self, title, img_path):
+    @staticmethod
+    def add_new(title: str, img_path: str):
         uuid = generate_uuid()
         current_date = get_date()
 
-        self.sql.execute("INSERT INTO main_news VALUES (?, ?, ?, ?)", (uuid, title, img_path, current_date))
-        self.db.commit()
+        sql.execute("INSERT INTO main_news VALUES (?, ?, ?, ?)", (uuid, title, img_path, current_date))
+        conn.commit()
+
+        Article.start(uuid)
+
+class Article:
+    @staticmethod
+    def start(uuid: str):
+        sql.execute(f"CREATE TABLE IF NOT EXISTS {article_uuid(uuid)}(type INT, info TEXT)")
+        conn.commit()
+    
+    @staticmethod
+    def is_exist(uuid: str) -> bool:
+        sql.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='{article_uuid(uuid)}'")
+        
+        return sql.fetchall() != []
+
+    @staticmethod
+    def add_update(uuid: str, type: int, text: str):
+        if not Article.is_exist(uuid): return
+        
+        sql.execute(f"INSERT INTO {article_uuid(uuid)} VALUES (?, ?)", (type, text))
+        conn.commit()
+    
+    @staticmethod
+    def get_info(uuid: str):
+        if not Article.is_exist(uuid): return
+
+        sql.execute(f"SELECT * FROM {article_uuid(uuid)}")
+        return convert_types(sql.fetchall())
+
+

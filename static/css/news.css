@@ -59,3 +59,15 @@
     padding: 0.5rem;
     border-radius: 5px;
 }
+
+.type0 {
+    color: rgb(255, 104, 96);
+}
+
+.type1 {
+    color: rgb(125, 255, 96);
+}
+
+.type2 {
+    color: rgb(255, 247, 96);
+}

@@ -13,11 +13,14 @@
 </section>
 <div class="news-container">
     <div class="news-feed">
-        <ul>
-            <h1>Bug fix</h1>
-            <li>Your mom was deleted</li>
-        </ul>
-
+        {% for info_type in info.keys() %}
+        <div class="news-post bg-blur-10px">
+            <h2 class="type{{ info_type }}">{{ update_type(info_type).name }}</h2>
+            {% for info_text in info[i] %}
+            <p>* {{ info_text }}</p>
+            {% endfor %}
+        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
