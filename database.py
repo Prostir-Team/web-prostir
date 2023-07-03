@@ -18,6 +18,12 @@ class News:
         return sql.fetchall()
     
     @staticmethod
+    def get_article(uuid: str):
+        sql.execute(f"SELECT * FROM main_news WHERE uuid='{uuid}'")
+        
+        return sql.fetchone()
+
+    @staticmethod
     def add_new(title: str, img_path: str):
         uuid = generate_uuid()
         current_date = get_date()

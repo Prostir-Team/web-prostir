@@ -33,11 +33,12 @@ def news_redirect():
 
 @app.route("/news/<uuid>")
 def article(uuid):
+	article_info = News.get_article(uuid)
 	info = Article.get_info(uuid)
 	if not info: 
 		return redirect("/news")
 
-	return render_template("article.html", info_keys=len(info.keys()), info=info, update_type=UpdateType)
+	return render_template("article.html", info_keys=len(info.keys()), info=info, update_type=UpdateType, article_info=article_info)
 
 @app.route("/add/news/<title>")
 def add_news(title):

@@ -15,6 +15,9 @@
     <div class="news-feed">
         {% for article in news %} <!-- article = (uuid, title, img_path, date) -->
         <a class="news-post bg-blur-10px" href="/news/{{ article[0] }}">
+
+            <!-- В середину артікл вкладено тапл(фактично список), і там там є інформація про новину -->
+            <!-- Вище ти можеш почачити, що за що відповідає і просто їх отримувати за допомогою article[1](Будеш отримувати title) -->
             <span id="post-title">{{ article[1] }}</span>
             on <span id="post-date">{{ article[3] }}</span>
         </a>
