@@ -129,7 +129,7 @@
     font-weight: 300;
     text-align: center;
 }
-
+/* 
 .player-list {
     display: flex;
     flex-direction: column;
@@ -203,7 +203,7 @@
     cursor: pointer;
     background-color: rgb(60,60,60);
     font-weight: 600;
-}
+} */
 
 /* base.html */
 
