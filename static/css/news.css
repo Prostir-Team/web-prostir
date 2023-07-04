@@ -44,6 +44,8 @@
     border-radius: inherit;
 
     margin-bottom: 1rem;
+
+    transition: background-color 0.5s;
 }
 
 .news-post-img {
@@ -56,6 +58,7 @@
 
 .news-post:hover {
     cursor: pointer;
+    background-color: rgba(100, 100, 100, 0.75);
 }
 
 .post-info {
