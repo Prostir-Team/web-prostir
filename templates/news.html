@@ -18,8 +18,11 @@
 
             <!-- В середину артікл вкладено тапл(фактично список), і там там є інформація про новину -->
             <!-- Вище ти можеш почачити, що за що відповідає і просто їх отримувати за допомогою article[1](Будеш отримувати title) -->
-            <span class="post-title">{{ article[1] }}</span>
-            о <span class="post-date">{{ article[3] }}</span>
+            <div class="post-info">
+                <div class="post-title">{{ article[1] }}</div>
+                <div>о <span class="post-date">{{ article[3] }}</span></div>
+            </div>
+            <img src="{{ url_for('static', filename=article[2]) }}" alt="" class="news-post-img" />
         </a>
         {% endfor %}
 
