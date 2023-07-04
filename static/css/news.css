@@ -9,8 +9,10 @@
     height: 100%;
     width: 100%;
 
-    background-image: url("/static/img/prostir_img6.png");
+    background-image: linear-gradient(to bottom, transparent, rgb(40, 40, 40)),
+        url("/static/img/prostir_img6.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .news-feed {
@@ -34,7 +36,7 @@
 .news-post {
     background-color: rgba(70, 70, 70, 0.75);
     margin: 0.5rem;
-    padding: 0.5rem;
+    padding: 4rem;
     border-radius: inherit;
 
     margin-bottom: 1rem;
