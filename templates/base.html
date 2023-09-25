@@ -14,13 +14,16 @@
 </head>
 <body>
     <nav class="bg-blur-5px">
-        <a class="nav-title" href="/">Prostir Team {% block pagename %}{% endblock %}</a>
-        <span class="nav-links">
-            <a href="/news">Новини</a>
-            <a href="/projects">Проєкти</a>
-            <a href="https://discord.gg/stV4JswQ9Q">Дискорд</a>
-            <a href="https://github.com/Prostir-Team">GitHub</a>
-        </span>
+        <div class="nav-container">
+            <a class="nav-title" href="/">Prostir Team {% block pagename %}{% endblock %}</a>
+            <span class="nav-links">
+                <a href="/news">Новини</a>
+                <a href="/projects">Проєкти</a>
+                <a href="https://discord.gg/stV4JswQ9Q">Дискорд</a>
+                <a href="https://github.com/Prostir-Team">GitHub</a>
+                <a title="Увійти через Steam" id="user-btn" href=""><img class="user-avatar" src="/static/img/team_pfp/n1clude.png" alt="user-avatar"></a>
+            </span>
+        </div>
     </nav>
     <div class="main">
         {% block main %}{% endblock %}
