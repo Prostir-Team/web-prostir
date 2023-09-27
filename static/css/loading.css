@@ -1,12 +1,10 @@
-
-
 body, html {
     margin: 0;
     padding: 0;
     background-color: black;
 }
 
-@keyframes logo {
+@keyframes prostirteam-logo {
     0% {
         opacity: 0;
     }
@@ -21,6 +19,15 @@ body, html {
     }
 }
 
+@keyframes prsbox-logo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .prostirteam-logo-container {
     display: flex;
     flex-direction: row;
@@ -30,12 +37,23 @@ body, html {
     min-height: 100vh;
 } 
 
-.prostirteam-logo {
+#prostirteam-logo {
     opacity: 0;
-    animation: logo 3s linear 1s;
+    animation: prostirteam-logo 3s linear 1s;
     margin: auto 0;
 }
 
-.prostirteam-logo svg {
-    height: 5rem;
+#prostirteam-logo svg {
+    height: 10vh;
+}
+
+#prsbox-logo {
+    opacity: 0;
+    animation: prsbox-logo 2s ease-out 1s;
+    animation-fill-mode: forwards;
+    margin: auto 0;
+}
+
+#prsbox-logo img {
+    max-height: 50vh;
 }
