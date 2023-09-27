@@ -54,5 +54,9 @@ def add_info():
 
 	return ""
 
+@app.route("/donate")
+def donate():
+	return render_template("donate.html")
+
 if __name__ == "__main__":
 	app.run(port=50000, debug=True)
