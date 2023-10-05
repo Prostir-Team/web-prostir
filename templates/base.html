@@ -21,7 +21,11 @@
                 <a href="/projects">Проєкти</a>
                 <a href="https://discord.gg/stV4JswQ9Q">Дискорд</a>
                 <a href="https://github.com/Prostir-Team">GitHub</a>
-                <a title="Увійти через Steam" id="user-btn" href="/donate"><img class="user-avatar" src="/static/img/placeholder.png" alt="user-avatar"></a>
+                {% if user == None %}
+                <a title="Увійти через Steam" id="user-btn" href="/steam_auth"><img class="steam-button" src="https://community.akamai.steamstatic.com/public/images/signinthroughsteam/sits_01.png" alt="user-avatar"></a>
+                {% else %}
+                <a title="Увійти через Steam" id="user-btn" href="/donate"><img class="user-avatar" src="{{ user.avatar }}" alt="user-avatar"></a>
+                {% endif %}
             </span>
         </div>
     </nav>

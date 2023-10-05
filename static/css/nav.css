@@ -56,6 +56,12 @@ nav {
     transition: all 200ms ease-out;
 }
 
+.steam-button {
+    max-height: 2rem;
+    /* border: 1px solid rgb(30,30,30); */
+    transition: all 200ms ease-out;
+}
+
 .user-avatar:hover {
     border-color: #7AFF63;
 }
